@@ -1,6 +1,7 @@
 const path = require('path');
-const packageJSON = require('./package.json');
 const webpack = require('webpack');
+
+const packageJSON = require('./package.json');
 
 module.exports = {
   mode: 'production',
@@ -9,7 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     libraryTarget: 'umd',
-    library: 'mtLinkSdk',
+    library: 'MTLinkSDK',
     libraryExport: 'default',
     umdNamedDefine: true
   },
